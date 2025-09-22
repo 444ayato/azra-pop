@@ -9,24 +9,22 @@ class PegawaiController extends Controller
 {
     public function index()
     {
-        // Data contoh
-        $name = "Ivana Azra";
-        $birth_date = Carbon::create(2007, 5, 31); // contoh tanggal lahir
-        $tgl_harus_wisuda = Carbon::create(2027, 10, 30); // contoh tanggal wisuda
-        $current_semester = 4; // contoh semester saat ini
 
-        // Hitung umur
+        $name = "Ivana Azra";
+        $birth_date = Carbon::create(2007, 5, 31);
+        $tgl_harus_wisuda = Carbon::create(2027, 10, 30);
+        $current_semester = 4;
+
+
         $my_age = $birth_date->age;
 
-        // Hitung jarak hari ke tanggal wisuda
+
         $time_to_study_left = now()->diffInDays($tgl_harus_wisuda, false);
 
-        // Tentukan pesan semester
         $semester_message = $current_semester < 3
             ? "Masih Awal, Kejar TAK"
             : "Jangan main-main, kurang-kurangi main game!";
 
-        // Buat array data
         $data = [
             'name' => $name,
             'my_age' => $my_age,
@@ -44,7 +42,6 @@ class PegawaiController extends Controller
             'future_goal' => 'Menjadi Data Scientist handal'
         ];
 
-        // kirim data ke view pegawai.blade.php
         return view('pegawai', $data);
     }
 
