@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class QuestionController extends Controller
+class PelangganController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +18,7 @@ class QuestionController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pelanggan.create');
     }
 
     /**
@@ -26,23 +26,7 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'nama'       => 'required|max:10',
-            'email'      => ['required', 'email'],
-            'pertanyaan' => 'required|max:300|min:8',
-        ], [
-            'nama.required' => 'Nama tidak boleh kosong',
-            'email.email'   => 'Email tidak valid',
-        ]);
-
-        //dd($request->all());
-
-        $data['nama']       = $request->nama;
-        $data['email']      = $request->email;
-        $data['pertanyaan'] = $request->pertanyaan;
-
-        return redirect()->route('home')->with('info', 'Terima Kasih Atas Pertanyaan Anda');
-        // return view('home-question-respon', $data);
+        //
     }
 
     /**

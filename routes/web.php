@@ -5,6 +5,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\PelangganController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,7 +33,7 @@ Route::get('/about', function () {
     return view('halaman-about');
 });
 
-Route::get('/home', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/pegawai', [PegawaiController::class, 'index']);
 
@@ -41,3 +42,5 @@ Route::post('question/store', [QuestionController::class, 'store'])
 
 Route::get('dashboard', [DashboardController::class, 'index'])
     ->name('dashboard');
+
+Route::resource('pelanggan', PelangganController::class);
