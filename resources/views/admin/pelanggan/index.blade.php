@@ -508,7 +508,7 @@
                 </div>
                 <div>
                     <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/components/forms/"
-                        class="btn btn-primary"><i class="far fa-question-circle me-1"></i> Kembali </a>
+                        class="btn btn-primary"><i class="far fa-question-circle me-1"></i> Tambah </a>
                 </div>
             </div>
         </div>
@@ -520,7 +520,7 @@
             @endif
         </div>
 
-        
+
 
         <div class="row">
             <div class="col-12 mb-4">
