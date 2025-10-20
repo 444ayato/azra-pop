@@ -1055,6 +1055,18 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
+            "version": "v12.34.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "f9ec5a5d88bc8c468f17b59f88e05c8ac3c8d687"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/f9ec5a5d88bc8c468f17b59f88e05c8ac3c8d687",
+                "reference": "f9ec5a5d88bc8c468f17b59f88e05c8ac3c8d687",
+=======
             "version": "v12.31.1",
             "source": {
                 "type": "git",
@@ -1065,6 +1077,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/281b711710c245dd8275d73132e92635be3094df",
                 "reference": "281b711710c245dd8275d73132e92635be3094df",
+>>>>>>> ee033f33a54df8f7a9e93fd3669f2077f4a96bc3
                 "shasum": ""
             },
             "require": {
@@ -1092,7 +1105,10 @@
                 "monolog/monolog": "^3.0",
                 "nesbot/carbon": "^3.8.4",
                 "nunomaduro/termwind": "^2.0",
+<<<<<<< HEAD
+=======
                 "phiki/phiki": "^2.0.0",
+>>>>>>> ee033f33a54df8f7a9e93fd3669f2077f4a96bc3
                 "php": "^8.2",
                 "psr/container": "^1.1.1|^2.0.1",
                 "psr/log": "^1.0|^2.0|^3.0",
@@ -1177,7 +1193,11 @@
                 "league/flysystem-sftp-v3": "^3.25.1",
                 "mockery/mockery": "^1.6.10",
                 "opis/json-schema": "^2.4.1",
+<<<<<<< HEAD
+                "orchestra/testbench-core": "^10.7.0",
+=======
                 "orchestra/testbench-core": "^10.6.5",
+>>>>>>> ee033f33a54df8f7a9e93fd3669f2077f4a96bc3
                 "pda/pheanstalk": "^5.0.6|^7.0.0",
                 "php-http/discovery": "^1.15",
                 "phpstan/phpstan": "^2.0",
@@ -1271,7 +1291,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
+<<<<<<< HEAD
+            "time": "2025-10-14T13:58:31+00:00"
+=======
             "time": "2025-09-23T15:33:04+00:00"
+>>>>>>> ee033f33a54df8f7a9e93fd3669f2077f4a96bc3
         },
         {
             "name": "laravel/prompts",
@@ -1334,6 +1358,18 @@
         },
         {
             "name": "laravel/serializable-closure",
+<<<<<<< HEAD
+            "version": "v2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/serializable-closure.git",
+                "reference": "038ce42edee619599a1debb7e81d7b3759492819"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/038ce42edee619599a1debb7e81d7b3759492819",
+                "reference": "038ce42edee619599a1debb7e81d7b3759492819",
+=======
             "version": "v2.0.5",
             "source": {
                 "type": "git",
@@ -1344,6 +1380,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/3832547db6e0e2f8bb03d4093857b378c66eceed",
                 "reference": "3832547db6e0e2f8bb03d4093857b378c66eceed",
+>>>>>>> ee033f33a54df8f7a9e93fd3669f2077f4a96bc3
                 "shasum": ""
             },
             "require": {
@@ -1391,7 +1428,11 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
+<<<<<<< HEAD
+            "time": "2025-10-09T13:42:30+00:00"
+=======
             "time": "2025-09-22T17:29:40+00:00"
+>>>>>>> ee033f33a54df8f7a9e93fd3669f2077f4a96bc3
         },
         {
             "name": "laravel/tinker",
@@ -2515,6 +2556,8 @@
             "time": "2025-05-08T08:14:37+00:00"
         },
         {
+<<<<<<< HEAD
+=======
             "name": "phiki/phiki",
             "version": "v2.0.4",
             "source": {
@@ -2586,6 +2629,7 @@
             "time": "2025-09-20T17:21:02+00:00"
         },
         {
+>>>>>>> ee033f33a54df8f7a9e93fd3669f2077f4a96bc3
             "name": "phpoption/phpoption",
             "version": "1.9.4",
             "source": {

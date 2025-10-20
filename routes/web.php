@@ -1,5 +1,7 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PegawaiController;
@@ -7,10 +9,13 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\PelangganController;
+=======
+>>>>>>> 1192841ad56e9cfbcbd849c96c791d507258415a
 
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 
 Route::get('/pcr', function () {
     return 'Selamat Datang di Website Kampus PCR!';
@@ -48,3 +53,5 @@ Route::resource('pelanggan', PelangganController::class);
 
 Route::resource('user', UserController::class);
 
+=======
+>>>>>>> 1192841ad56e9cfbcbd849c96c791d507258415a
