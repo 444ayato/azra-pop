@@ -2,22 +2,23 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Faker\Factory as Faker;
 
 class CreateFirstUser extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        User::create([
-            'name' => 'Admin',
-            'email' => 'gatot@pcr.pcr.ac.id',
-            'password' => Hash::make('gatotkaca')
-        ]);
+        $faker = Faker::create();
+
+        for ($i = 0; $i < 1000; $i++) {
+            DB::table('users')->insert([
+                'name'     => $faker->name,
+                'email'    => $faker->unique()->safeEmail,
+                'password' => Hash::make('password'), // default password
+            ]);
+        }
     }
 }
